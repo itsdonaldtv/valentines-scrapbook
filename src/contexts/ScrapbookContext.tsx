@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 import type { Scrapbook, ScrapbookData, Photo, YouTubeSong } from '../types';
-import { loadScrapbooks, saveScrapbooks, ScrapbookMetadata } from '../utils/storage';
+import { loadScrapbooks, saveScrapbooks, type ScrapbookMetadata } from '../utils/storage';
 
 interface ScrapbookContextType {
   scrapbooks: Scrapbook[];

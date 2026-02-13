@@ -18,9 +18,9 @@
         }
       ],
       "song": {
-        "id": "song-2025",
-        "url": "https://www.youtube.com/watch?v=1aMCVgRKcP4",
         "videoId": "YOUR_VIDEO_ID",
+        "title": "Your Song Title",
+        "url": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
         "addedAt": "2025-02-13T00:00:00.000Z"
       },
       "createdAt": "2025-01-01T00:00:00.000Z",
