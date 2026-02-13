@@ -7,20 +7,80 @@
         {
           "id": "photo-2025-1",
           "month": 1,
-          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/valentines-scrapbook/2025/jan",
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/jan",
           "uploadedAt": "2025-01-01T00:00:00.000Z"
         },
         {
           "id": "photo-2025-2",
           "month": 2,
-          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/valentines-scrapbook/2025/feb",
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/feb",
           "uploadedAt": "2025-02-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-3",
+          "month": 3,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/mar",
+          "uploadedAt": "2025-03-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-4",
+          "month": 4,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/apr",
+          "uploadedAt": "2025-04-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-5",
+          "month": 5,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/may",
+          "uploadedAt": "2025-05-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-6",
+          "month": 6,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/jun",
+          "uploadedAt": "2025-06-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-7",
+          "month": 7,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/jul",
+          "uploadedAt": "2025-07-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-8",
+          "month": 8,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/aug",
+          "uploadedAt": "2025-08-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-9",
+          "month": 9,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/sep",
+          "uploadedAt": "2025-09-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-10",
+          "month": 10,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/oct",
+          "uploadedAt": "2025-10-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-11",
+          "month": 11,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/nov",
+          "uploadedAt": "2025-11-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-12",
+          "month": 12,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/f_auto/valentines-scrapbook/2025/dec",
+          "uploadedAt": "2025-12-01T00:00:00.000Z"
         }
       ],
       "song": {
         "videoId": "YOUR_VIDEO_ID",
-        "title": "Your Song Title",
-        "url": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+        "title": "Juno",
+        "url": "https://www.youtube.com/watch?v=1aMCVgRKcP4",
         "addedAt": "2025-02-13T00:00:00.000Z"
       },
       "createdAt": "2025-01-01T00:00:00.000Z",
