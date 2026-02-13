@@ -30,13 +30,16 @@ export const ScrapbookProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   useEffect(() => {
     const loadData = async () => {
       try {
+        console.log('Loading scrapbooks from /scrapbooks.json...');
         const data = await loadScrapbooks();
+        console.log('Loaded scrapbooks data:', data);
         setScrapbookData({
           version: data.version,
           scrapbooks: data.scrapbooks,
           sharedLinks: {},
         });
         const years = Object.keys(data.scrapbooks).map(Number);
+        console.log('Available years:', years);
         if (years.length > 0) {
           setCurrentYear(years[0]);
         }
