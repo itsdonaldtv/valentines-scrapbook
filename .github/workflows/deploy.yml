@@ -30,18 +30,18 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: valentines-scrapbook
+        working-directory: .
 
       - name: Build
         run: npm run build
-        working-directory: valentines-scrapbook
+        working-directory: .
         env:
           VITE_CLOUDINARY_CLOUD_NAME: ${{ secrets.VITE_CLOUDINARY_CLOUD_NAME }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'valentines-scrapbook/dist'
+          path: './dist'
 
   deploy:
     environment:
