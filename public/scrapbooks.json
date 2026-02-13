@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "scrapbooks": {
+    "2025": {
+      "year": 2025,
+      "photos": [
+        {
+          "id": "photo-2025-1",
+          "month": 1,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/valentines-scrapbook/2025/jan",
+          "uploadedAt": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "id": "photo-2025-2",
+          "month": 2,
+          "url": "https://res.cloudinary.com/ddcqly36h/image/upload/valentines-scrapbook/2025/feb",
+          "uploadedAt": "2025-02-01T00:00:00.000Z"
+        }
+      ],
+      "song": {
+        "id": "song-2025",
+        "url": "https://www.youtube.com/watch?v=1aMCVgRKcP4",
+        "videoId": "YOUR_VIDEO_ID",
+        "addedAt": "2025-02-13T00:00:00.000Z"
+      },
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-02-13T00:00:00.000Z"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 import type { Scrapbook, ScrapbookData, Photo, YouTubeSong } from '../types';
+import { loadScrapbooks, saveScrapbooks, ScrapbookMetadata } from '../utils/storage';
 
 interface ScrapbookContextType {
   scrapbooks: Scrapbook[];
@@ -23,27 +24,46 @@ export const ScrapbookProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     sharedLinks: {},
   });
   const [currentYear, setCurrentYear] = useState<number | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Load from localStorage on mount
+  // Load from GitHub on mount
   useEffect(() => {
-    const saved = localStorage.getItem('scrapbookData');
-    if (saved) {
+    const loadData = async () => {
       try {
-        setScrapbookData(JSON.parse(saved));
-        const years = Object.keys(JSON.parse(saved).scrapbooks).map(Number);
+        const data = await loadScrapbooks();
+        setScrapbookData({
+          version: data.version,
+          scrapbooks: data.scrapbooks,
+          sharedLinks: {},
+        });
+        const years = Object.keys(data.scrapbooks).map(Number);
         if (years.length > 0) {
           setCurrentYear(years[0]);
         }
       } catch (error) {
         console.error('Failed to load scrapbook data:', error);
+      } finally {
+        setIsLoading(false);
       }
-    }
+    };
+    loadData();
   }, []);
 
-  // Save to localStorage whenever data changes
+  // Save to GitHub whenever data changes (debounced)
   useEffect(() => {
-    localStorage.setItem('scrapbookData', JSON.stringify(scrapbookData));
-  }, [scrapbookData]);
+    if (isLoading) return; // Don't save during initial load
+    
+    const saveData = async () => {
+      const metadata: ScrapbookMetadata = {
+        version: scrapbookData.version,
+        scrapbooks: scrapbookData.scrapbooks,
+      };
+      await saveScrapbooks(metadata);
+    };
+    
+    const timeoutId = setTimeout(saveData, 1000); // Debounce saves by 1 second
+    return () => clearTimeout(timeoutId);
+  }, [scrapbookData, isLoading]);
 
   const createYear = useCallback((year: number) => {
     setScrapbookData((prev) => {
