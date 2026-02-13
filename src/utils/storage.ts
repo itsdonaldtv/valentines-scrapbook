@@ -13,7 +13,8 @@ export interface ScrapbookMetadata {
 // Read scrapbooks.json from public folder
 export const loadScrapbooks = async (): Promise<ScrapbookMetadata> => {
   try {
-    const response = await fetch('/scrapbooks.json');
+    // Add cache-busting parameter
+    const response = await fetch(`/scrapbooks.json?t=${Date.now()}`);
     
     if (!response.ok) {
       return {
